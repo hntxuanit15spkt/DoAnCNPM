@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "Demo";
+    Layout = "~/Views/Layout/HomeLayout.cshtml";
+}
+         
+<div id="Content">
+    <h1>Danh sách Logo</h1>
+    @*Sử dụng boostrap
+        md:dùng cho những thiết bị màn hình lớn
+        xs: dùng cho điện thoại di động
+        sm: dùng cho máy bảng
+    *@
+    <div class="row">
+        <div class="col-md-2">
+           
+            <div class="Logo">
+                <span class="title">Hướng dẫn Css3 vàaaaaaa bootstrap framework itclass.vn</span>
+
+            </div>
+        </div>
+            <div class="col-md-2">
+             
+                <div class="Logo">
+                    <span class="title">Home</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                
+                <div class="Logo">
+                    <span class="title">Home</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+  
+                <div class="Logo">
+                    <span class="title">Home</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+        
+                <div class="Logo">
+                    <span class="title">Home</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+ 
+                <div class="Logo">
+                    <span class="title">HomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHomeHome</span>
+                </div>
+            </div>
+ 
+    </div>
+
+</div>
+@*Css*@
+<style>
+    #Content {
+     height:500px;
+    }
+    .title {
+        text-overflow: 'Xem thêm';
+        font-size: 15pt;
+        font-family: 'Segoe UI';
+        font-weight: bold;
+        color: white;
+        margin-top: 30px;
+    }
+    .Logo {
+        height: 100px;
+        background-color: green;
+        background-image: url("../Content/images/icHome.png");
+        background-repeat: no-repeat;
+        background-position: center right;
+        padding-top: 35px;
+        padding-left: 10px;
+        transition: 0.5s;
+        cursor: pointer;
+
+        border-bottom-left-radius:5px;
+
+    }
+        .Logo:hover {
+            height: 100px;
+     
+            background-color: red;
+            background-image: url("../Content/images/icHome.png");
+            background-repeat: no-repeat;
+            background-position: 10px 35px;
+            padding-top: 0px;
+            -moz-transition: 0.5s;
+            opacity:0.5;
+            box-shadow: inset 5px 5px 10px White,inset -5px -5px 10px White;
+        }
+</style>

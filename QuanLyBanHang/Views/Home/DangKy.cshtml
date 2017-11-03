@@ -1,0 +1,80 @@
+﻿@using CaptchaMvc.HtmlHelpers
+@using CaptchaMvc;
+
+@using WebSiteBanHang.Models
+@model ThanhVien
+@{
+    ViewBag.Title = "DangKy";
+    Layout = "~/Views/Layout/ProductLayout.cshtml";
+}
+
+<div class="DangKy">
+    <div class=" register">
+        <h1>Đăng ký thành viên</h1>
+        @using (Html.BeginForm()) { 
+            
+              @Html.AntiForgeryToken()
+              <hr />
+             @Html.ValidationSummary(true)
+            <div class="col-md-6 register-top-grid">
+                <h3>Thông tin cá nhân</h3>
+                <div class="titleclass">
+                    <span>@Html.LabelFor(model => model.TaiKhoan, new { @class = "control-label " })</span>
+                    @Html.TextBoxFor(model => model.TaiKhoan, new {@class="cTaiKhoan" })
+                    @Html.ValidationMessageFor(model=>model.TaiKhoan)
+                </div>
+                <div class="titleclass">
+                    <span>Họ tên</span>
+                    @Html.TextBox("HoTen")
+                </div>
+                <div class="titleclass">
+                    <span>Địa chỉ</span>
+                    @Html.TextBox("DiaChi")
+                </div>
+                <div class="titleclass">
+                    <span>Email </span>
+                    @Html.TextBox("Email")
+                </div>
+                <div class="titleclass">
+                    <span>Điện thoại </span>
+                    @Html.TextBox("SoDienThoai")
+                </div>
+            </div>
+            <div class="col-md-6 register-bottom-grid register-top-grid">
+                <h3>Thông tin đăng nhập</h3>
+                <div class="titleclass">
+                    <span>Mật khẩu</span>
+                    @Html.Password("MatKhau")
+                </div>
+                <div class="titleclass">
+                    <span>Nhập lại mật khẩu</span>
+                    @Html.Password("NhapLaiMatKhau")
+                </div>
+                <div class="titleclass">
+                    <span>Câu hỏi bí mật</span>
+                    @Html.DropDownList("CauHoi",null, new {@class="form-control" })
+                </div>
+                <div class="titleclass">
+                    <span>Câu trả lời</span>
+                    @Html.TextBox("CauTraLoi")
+                </div>
+                <div class="titleclass">
+                    @Html.MathCaptcha()
+                </div>
+                <input value="Xác nhận" type="submit">
+            </div>
+            <div class="clearfix"> </div>
+        }
+    </div>
+</div>
+<h1 style="color:red;"> @ViewBag.ThongBao</h1>
+<style>
+    .titleclass {
+        margin-top:1%;
+        text-align:left;
+    
+    }
+</style>
+<script>
+    $(".titleclass").find("a").prop("href", "#a");
+</script>

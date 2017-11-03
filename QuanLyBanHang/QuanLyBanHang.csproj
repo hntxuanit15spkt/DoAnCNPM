@@ -732,6 +732,8 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -739,6 +741,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <None Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -753,9 +756,58 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\DangKy\Index.cshtml" />
+    <Content Include="Views\DemoAjax\DemoAjax.cshtml" />
+    <Content Include="Views\DemoAjax\LoadSanPhamAjax.cshtml" />
+    <Content Include="Views\DemoCss\Demo.cshtml" />
+    <Content Include="Views\DemoJquery\Demo.cshtml" />
+    <Content Include="Views\DemoJquery\TestMethodJquery.cshtml" />
+    <Content Include="Views\GioHang\GioHangPartial.cshtml" />
+    <Content Include="Views\GioHang\SuaGioHang.cshtml" />
+    <Content Include="Views\GioHang\ThongBao.cshtml" />
+    <Content Include="Views\GioHang\XemGioHang.cshtml" />
+    <Content Include="Views\Home\DangKy.cshtml" />
+    <Content Include="Views\Home\DangKy1.cshtml" />
+    <Content Include="Views\Home\LoiPhanQuyen.cshtml" />
+    <Content Include="Views\Home\MenuPartial.cshtml" />
+    <Content Include="Views\KhachHang\GroupDuLieu.cshtml" />
+    <Content Include="Views\KhachHang\Index.cshtml" />
+    <Content Include="Views\KhachHang\Index1.cshtml" />
+    <Content Include="Views\KhachHang\SanPhamPartial.cshtml" />
+    <Content Include="Views\KhachHang\SortDuLieu.cshtml" />
+    <Content Include="Views\KhachHang\TruyVan1DoiTuong.cshtml" />
+    <Content Include="Views\Layout\AdminLayout.cshtml" />
+    <Content Include="Views\Layout\HeaderTopPartital.cshtml" />
+    <Content Include="Views\Layout\HomeLayout.cshtml" />
+    <Content Include="Views\Layout\ProductLayout.cshtml" />
+    <Content Include="Views\PhanQuyen\Index.cshtml" />
+    <Content Include="Views\PhanQuyen\PhanQuyen.cshtml" />
+    <Content Include="Views\QuanLyDonHang\ChuaGiao.cshtml" />
+    <Content Include="Views\QuanLyDonHang\ChuaThanhToan.cshtml" />
+    <Content Include="Views\QuanLyDonHang\DaGiaoDaThanhToan.cshtml" />
+    <Content Include="Views\QuanLyDonHang\DuyetDonHang.cshtml" />
+    <Content Include="Views\QuanLyPhieuNhap\DSSPHetHang.cshtml" />
+    <Content Include="Views\QuanLyPhieuNhap\NhapHang.cshtml" />
+    <Content Include="Views\QuanLyPhieuNhap\NhapHangDon.cshtml" />
+    <Content Include="Views\QuanLySanPham\ChinhSua.cshtml" />
+    <Content Include="Views\QuanLySanPham\Index.cshtml" />
+    <Content Include="Views\QuanLySanPham\TaoMoi.cshtml" />
+    <Content Include="Views\QuanLySanPham\Xoa.cshtml" />
+    <Content Include="Views\Quyen\Index.cshtml" />
+    <Content Include="Views\Quyen\ThemQuyen.cshtml" />
+    <Content Include="Views\SanPham\SanPham.cshtml" />
+    <Content Include="Views\SanPham\SanPhamStyle1Partial.cshtml" />
+    <Content Include="Views\SanPham\SanPhamStyle2Partial.cshtml" />
+    <Content Include="Views\SanPham\XemChiTiet.cshtml" />
+    <Content Include="Views\SubmitListModel\Index.cshtml" />
+    <Content Include="Views\ThongKe\ThongKe.cshtml" />
+    <Content Include="Views\TimKiem\KQTimKiem.cshtml" />
+    <Content Include="Views\TimKiem\KQTimKiemPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Demo\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
