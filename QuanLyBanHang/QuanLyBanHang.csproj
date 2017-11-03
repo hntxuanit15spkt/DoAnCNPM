@@ -142,10 +142,27 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\DangKyController.cs" />
+    <Compile Include="Controllers\DemoAjaxController.cs" />
+    <Compile Include="Controllers\DemoCssController.cs" />
+    <Compile Include="Controllers\DemoJqueryController.cs" />
+    <Compile Include="Controllers\GioHangController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KhachHangController.cs" />
+    <Compile Include="Controllers\PhanQuyenController.cs" />
+    <Compile Include="Controllers\QuanLyDonHangController.cs" />
+    <Compile Include="Controllers\QuanLyPhieuNhapController.cs" />
+    <Compile Include="Controllers\QuanLySanPhamController.cs" />
+    <Compile Include="Controllers\QuyenController.cs" />
+    <Compile Include="Controllers\SanPhamController.cs" />
+    <Compile Include="Controllers\SubmitListModelController.cs" />
+    <Compile Include="Controllers\ThongKeController.cs" />
+    <Compile Include="Controllers\TimKiemController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ItemGioHang.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -739,7 +756,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
